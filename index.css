@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500');
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+/* initial setup */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+
+/*-----------------------------Navbar-------------------------------------*/
+
+/* Layout */
+#nav-container {
+    background-color: #f8f8f8;
+    padding: 1em;
+}
+
+.navbar {
+    width: 90%;
+    max-width: 990px;
+    margin: 0 auto;
+}
+
+.logo {
+    text-align: center;
+    justify-content: end;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin: .5em 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* typography */
+
+.header-title {
+    font-family: 'Lora';
+    font-size: 2rem;
+    color: #143774;
+}
+
+
+
+.header-subtitle {
+    font-family: 'Ubuntu';
+    font-size: 0.75rem;
+    color: #1792D2;
+    margin:0;
+}
+
+.header-subsection {
+    font-family: 'Ubuntu';
+    font-size: 0.75rem;
+    color: #707070;
+    font-weight: bolder;
+}
+
+
+.header-subsection:hover {
+    color:#143774;
+}
+
+.curr-select {
+    border-bottom: 1px solid #707070;
+} 
+
+.curr-select:hover {
+    color: #707070;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+/*-----------------------------Container-------------------------------------*/
+
+/* Layout */
+
+.flex-container {
+    flex-direction: column;
+    padding: 1em;
+}
+
+.container {
+    max-width: 990px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #143774;
+    color: white;
+    text-align: center;
+    padding: 3em 0;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.fit-image {
+    object-fit: cover;
+    height: 300px;
+}
+
+.img3 {
+    object-position: 50% 100%;
+}
+.img4 {
+    object-position:0 80%;
+}
+
+.fit-widget-image {
+    height: 200px;
+}
+
+.fit-img3 {
+    object-position: 50% 100%;
+}
+
+.widget-title-margin {
+    margin-bottom: 1em;
+}
+
+.about-image {
+    object-position: 0 30%;
+    margin-bottom: 1em;
+}
+
+p {
+    font-family: 'Ubuntu';
+    font-weight: lighter;
+}
+
+
+
+/* articles */
+
+.article-featured {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+}
+
+.article-recent {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+.article-recent-main {
+    order: 2;
+}
+
+.article-recent-secondary {
+    order: 1;
+}
+
+/* widgets */
+
+.sidebar-widget {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1em solid #efefef;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+.primary-widget {
+    margin-bottom: 2em;
+}
+
+.widget-recent-post {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 18px;
+}
+
+.widget-recent-post:last-child {
+    border: 0;
+    margin: 0;
+}
+
+.widget-recent-post-title {
+    order: 2;
+}
+
+.widget-image {
+    order: 1;
+}
+
+
+
+
+/* typography */
+
+.article-title {
+    font-family: 'Lora';
+    font-size: 1.5rem;
+    color: #143774;
+}   
+
+.article-body {
+    font-size: 1.125rem;
+    color: #707070;
+    font-family: 'Ubuntu';
+    font-weight: lighter;
+}
+
+.article-read-more {
+    font-family: 'Ubuntu';
+    font-size: 0.875rem;
+    color: #1792D2;
+    text-transform: uppercase;
+    /* text-decoration: underline; */
+    font-weight: bold;
+}
+
+.article-read-more:hover {
+    color: #143774;
+}
+
+.article-info {
+    font-family: 'Ubuntu';
+    font-size: 0.875rem;
+    font-weight: lighter;
+}
+
+.highlight {
+    color: #1792D2;
+    text-decoration: underline;
+}
+
+.widget-title {
+    font-size: 1em;
+    font-family: 'Ubuntu';
+    color: #143774;
+    margin-bottom: 1em;
+}
+
+.widget-body {
+    font-family: 'Ubuntu';
+    color: #1792D2;
+    font-weight: lighter;
+}
+
+.widget-recent-post-title {
+    font-family: 'Lora';
+    color: #143774;
+}
+
+.about-subheads {
+    font-family: 'Lora';
+    color: #1792D2;
+}
+
+/* ----------------------------------------------------------------------------- */
+
+/* for Mobile */
+
+@media(min-width: 800px) {
+
+    /* layout */
+    .flex-container {
+        flex-direction: row;
+    }
+
+    ul {
+        flex-direction: row;
+    }
+
+    main {
+        width: 68%;
+    }
+    
+    aside {
+        width: 28%;
+    }
+
+    .article-featured {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article-image {
+        order: -2;
+    }
+
+    .article-title {
+        order: -1;
+    }
+
+    .article-title-main {
+        padding-top: 0.5em;
+    }
+
+    .article-recent {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .article-recent-main {
+        width: 68.5%;
+    }
+
+    .article-recent-secondary {
+        width: 28.5%;
+    }
+
+    .fit-image {
+        height: 200px;
+    }
+
+    .img1 {
+        height: 400px
+    }
+
+    .fit-widget-image {
+        height: 120px;
+    }
+
+    .about-image {
+        height: 250px;
+    }
+} 
+
+
+/* Understanding Negative Margin */
+/* @media (min-width: 550px) {
+    .article-recent-main {
+        margin-top: -2.2em;
+    }
+
+    .article-info {
+        text-align: right;
+    }
+} */
+
+
